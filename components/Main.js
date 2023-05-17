@@ -1,17 +1,16 @@
-import React from "react";
-import EmailForm from "./FirstPage/EmailForm";
-import Faq from "./FirstPage/Faq";
-import Form from "./FirstPage/Form";
-import Contact from "./FirstPage/Contact";
-import Search from "./Search";
-import Warning from "./Warning";
-import { Divider } from "@mui/material";
-import { inject } from "@vercel/analytics";
-import * as BS from "react-bootstrap";
+import React from 'react'
+import EmailForm from './FirstPage/EmailForm'
+import Faq from './FirstPage/Faq'
+import Form from './FirstPage/Form'
+import Contact from './FirstPage/Contact'
+import Search from './Search'
+import Warning from './Warning'
+import { Divider } from '@mui/material'
+import { inject } from '@vercel/analytics'
+import * as BS from 'react-bootstrap'
+;<Divider sx={{ m: 0, p: 0 }} />
 
-<Divider sx={{ m: 0, p: 0 }} />;
-
-inject();
+inject()
 
 export const Main = () => (
   <div>
@@ -25,11 +24,11 @@ export const Main = () => (
     </BS.Row>
     <EmailForm />
     {/* <div className="gray"> */}
-      <Form />
+    <Form />
     {/* </div> */}
-    <div className="gray">
+    <div className='gray'>
       <Faq />
     </div>
     <Contact />
   </div>
-);
+)

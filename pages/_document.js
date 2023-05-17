@@ -24,9 +24,9 @@ export default function Document() {
       </Head>
       <body>
         <Provider store={store}>
-          <ScrollToTop />
-          <NavBar />
           <ThemeProvider theme={Theme}>
+            <ScrollToTop />
+            <NavBar />
             <Container maxWidth={false} disableGutters={true}>
               <Main />
             </Container>

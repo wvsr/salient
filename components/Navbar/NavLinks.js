@@ -1,10 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { connect, useDispatch, useSelector } from 'react-redux'
-import Link from 'next/link'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import MenuItem from '@mui/material/MenuItem'
-
+import Link from 'next/link'
 const NavLinks = () => {
   const [anchorElNav, setAnchorElNav] = useState(null)
   const pages = ['Products', 'Pricing', 'Blog']
@@ -60,7 +59,7 @@ const NavLinks = () => {
       <MenuItem onClick={handleCloseNavMenu}>
         <Typography component={'span'} variant='h5' style={{ ml: 10 }}>
           <Link
-            href='/#'
+            href='/'
             style={{
               textDecoration: 'none',
               color: 'black',

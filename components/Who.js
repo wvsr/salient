@@ -19,15 +19,11 @@ const Who = () => {
     <BS.Container>
       <div>
         <Box sx={{ pt: 20, pb: 10, display: 'flex', justifyContent: 'center' }}>
-          <Typography component='h1' variant='h2'>
-            <div
-              className='fontbold'
-              data-aos='zoom-in'
-              data-aos-duration='1000'
-            >
+          <div className='fontbold' data-aos='zoom-in' data-aos-duration='1000'>
+            <Typography component='h1' variant='h2'>
               Meet the team
-            </div>
-          </Typography>
+            </Typography>
+          </div>
         </Box>
         <Box
           sx={{
@@ -51,19 +47,22 @@ const Who = () => {
                     </BS.Col>
                     <br />
                     <BS.Col lg={6} md={7} sm={8} xs={10}>
-                      <Typography align='right'>
-                        <h5 className='font'>
+                      <Box align='right'>
+                        <div className='font'>
                           <div data-aos='fade-left' data-aos-duration='1000'>
-                            Search bar for SEC Documents
-                            <br />
-                            <br />
-                            Financial professionals spend too much time finding
-                            data to build models Salient will save customers
-                            time using AI enabled tools by finding the
-                            information they are looking for in fewer keystrokes
+                            <h6>
+                              Search bar for SEC Documents
+                              <br />
+                              <br />
+                              Financial professionals spend too much time
+                              finding data to build models Salient will save
+                              customers time using AI enabled tools by finding
+                              the information they are looking for in fewer
+                              keystrokes
+                            </h6>
                           </div>
-                        </h5>
-                      </Typography>
+                        </div>
+                      </Box>
                     </BS.Col>
                   </BS.Row>
                   <br />
@@ -83,7 +82,7 @@ const Who = () => {
                       <Box sx={{ pb: 8, justifyContent: 'center' }}>
                         {' '}
                         <div>
-                          <Typography sx={{ pl: 5, pt: 0, pb: 4 }}>
+                          <Box sx={{ pl: 5, pt: 0, pb: 4 }}>
                             <img src='/promo.svg' height={130} />
                             <br />
                             <br />
@@ -100,7 +99,7 @@ const Who = () => {
                               @gsb.columbia.edu{" "}
                             </h4>
                             </div> */}
-                          </Typography>
+                          </Box>
                         </div>
                         <br />
                       </Box>
@@ -117,30 +116,40 @@ const Who = () => {
                         {' '}
                         <div>
                           <div>
-                            <Typography sx={{ pl: 5, pt: 0, pb: 4 }}>
+                            <Box sx={{ pl: 5, pt: 0, pb: 4 }}>
                               <img src='/ops.svg' height={130} /> <br />
                               <br />
-                              <h2>
-                                Ben Greenspan <br />
-                                <div className='fontbold'>Head Developer</div>
-                              </h2>
+                              <Box>
+                                <h2 className='fontbold'>Ben Greenspan</h2>
+                                <br />
+                                <div className='fontbold'>
+                                  <h2>Head Developer</h2>
+                                </div>
+                              </Box>
                               <br />
-                              <h4>
+                              <div>
                                 <ul>
                                   <li>
-                                    Six years as an equity trader at Trillium
-                                    Management
+                                    <h4>
+                                      Six years as an equity trader at Trillium
+                                      Management
+                                    </h4>
                                   </li>
-                                  <li>Columbia {`EMBA '24`} student</li>
                                   <li>
-                                    Founder and President of the AI Club at CBS
+                                    <h4>Columbia {`EMBA '24`} student</h4>
+                                  </li>
+                                  <li>
+                                    <h4>
+                                      Founder and President of the AI Club at
+                                      CBS
+                                    </h4>
                                   </li>
                                 </ul>
                                 <br />
                                 <br />
                                 Bgreenspan24@gsb.columbia.edu{' '}
-                              </h4>
-                            </Typography>
+                              </div>
+                            </Box>
                           </div>
                         </div>
                         <br />

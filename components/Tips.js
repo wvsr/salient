@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Form from './FirstPage/Form'
-import { Link } from 'next/link'
+import Link from 'next/link'
 import Aos from 'aos'
 import * as BS from 'react-bootstrap'
 import { send } from 'emailjs-com'
@@ -107,7 +107,7 @@ const Tips = () => {
           }}
         >
           <div className='fontbold'>
-            <Typography
+            <Box
               variant='h3'
               // className="white-background"
               sx={{
@@ -125,7 +125,7 @@ const Tips = () => {
                     data-aos='fade-right'
                     data-aos-duration='1500'
                   >
-                    Tips for using Salient
+                    <Typography variant='h3'>Tips for using Salient</Typography>
                     <h4>
                       In an effort to help you get the most out of your time at
                     </h4>
@@ -234,7 +234,7 @@ const Tips = () => {
                   </div>
                 </BS.Col>
               </BS.Row>
-            </Typography>
+            </Box>
           </div>
         </Box>
       </Container>
@@ -244,9 +244,8 @@ const Tips = () => {
           <Container className='form' sx={{ pt: 0 }}>
             <BS.Row>
               <BS.Col md={4}>
-                <Typography>
-                  <Typography
-                    variant='h4'
+                <Box>
+                  <Box
                     // className="white-background"
                     sx={{
                       pt: 0,
@@ -257,10 +256,12 @@ const Tips = () => {
                     }}
                   >
                     <div className='fontbold'>
-                      Anything you would like to add? Let us know.
+                      <Typography variant='h4'>
+                        Anything you would like to add? Let us know.
+                      </Typography>
                     </div>
-                  </Typography>
-                </Typography>
+                  </Box>
+                </Box>
                 <div data-aos='fade-up-right' data-aos-duration='1500'>
                   <img src='rocket.svg' height={160} alt='Tips' />
                 </div>
