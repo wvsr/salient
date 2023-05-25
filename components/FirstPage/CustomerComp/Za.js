@@ -9,7 +9,7 @@ const Za = () => {
           <div className="container2">
             <img src="/za.png" alt="Zs" className="image2" />
             <div className="middle2">
-              <div className="text2">Granny Za's Cannabis</div>
+              <div className="text2">Granny {`Za's`} Cannabis</div>
             </div>
           </div>
         </a>
